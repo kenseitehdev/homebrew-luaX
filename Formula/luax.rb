@@ -1,5 +1,4 @@
 class Luax < Formula
-class Luax < Formula
   desc "Extended Lua programming language"
   homepage "https://github.com/kenseitehdev/luaX"
   version "1.0.1"
