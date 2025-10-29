@@ -1,15 +1,15 @@
 class Luax < Formula
   desc "Extended Lua programming language"
   homepage "https://github.com/kenseitehdev/luaX"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   if OS.mac?
-    url "https://github.com/kenseitehdev/luaX/releases/download/1.0.2/luaX_MacOS_ARM"
-    sha256 "fb7976ee096a54e9b94583c431c7385507b720e0fb626a0abfbb7fe067a5b3c8"
+    url "https://github.com/kenseitehdev/luaX/releases/download/1.0.3/luaX_MacOS_ARM"
+    sha256 "c2366125a28fae8490f4a2721dfabeeeb8cfca097aae42e2902b5303ae696098"
   elsif OS.linux?
-    url "https://github.com/kenseitehdev/luaX/releases/download/1.0.2/luaX_Nix_x64"
-    sha256 "52994088d055ddd1b8882d0e2cc3ce8da1b885488bd797535dd518b09f20d24c"
+    url "https://github.com/kenseitehdev/luaX/releases/download/1.0.3/luaX_Nix_x64"
+    sha256 "2a5af8903ed6d54503dc838e79cedc877a0dd3ab4060c266c4b081b31831417a"
   end
 
   def install
@@ -22,6 +22,6 @@ class Luax < Formula
   end
 
   test do
-    assert_match "1.0.2", shell_output("#{bin}/luax --version")
+    assert_match "1.0.3", shell_output("#{bin}/luax --version")
   end
 end
